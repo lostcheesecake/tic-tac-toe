@@ -1,15 +1,7 @@
 @import '~bootstrap/scss/bootstrap';
 
-.navbar-brand {
-  font-size: 50px;
-}
-
-html {
-  background-color: red;
-}
-
 td {
-  border: 5px solid white;
+  border: 5px solid;
   cursor: pointer;
   font-family: 'Comic Sans MS', cursive, sans-serif;
   font-size: 100px;
@@ -23,10 +15,10 @@ td {
 table {
   border-collapse: collapse;
   justify-content: center;
-  left: 775px;
+  left: 815px;
   margin-left: -155px;
   position: absolute;
-  top: 300px;
+  top: 200px;
 }
 
 table tr:first-child td {
@@ -45,19 +37,6 @@ table tr td:last-child {
   border-right: 0;
 }
 
-.endgame {
-  background-color: rgba(205,133,63, 0.8);
-  border-radius: 5px;
-  color: white;
-  display: none;
-  font-size: 2em;
-  justify-content: center;
-  left: 50%;
-  margin-left: -100px;
-  padding-bottom: 50px;
-  padding-top: 50px;
-  position: absolute;
-  text-align: center;
-  top: 120px;
-  width: 200px;
+form {
+  flex-direction: column;
 }
