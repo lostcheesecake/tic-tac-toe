@@ -1,11 +1,12 @@
 'use strict'
 
-const config = require('../config.js')
-const store = require('../store.js')
+const config = require('../config')
+const store = require('../store')
 
 const signUp = (formData) => {
+  console.log('signUp')
   return $.ajax({
-    url: config.apiUrl + '/sign-up',
+    url: config.apiUrl + 'sign-up',
     method: 'POST',
     data: formData
   })
