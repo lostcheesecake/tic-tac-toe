@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <table>
+  <table id="board">
     <tr>
       <td class="cell" id="0"></td>
       <td class="cell" id="1"></td>
@@ -31,69 +31,42 @@
       <td class="cell" id="8"></td>
     </tr>
   </table>
-  <div class="endgame">
-    <div class="text"></div>
-    <button onClick="startGame()">Re-Play</button>
+  <div>Player One Choose:</div>
+  <button>X</button>
+  <button>O</button>
+
+  <div> Next move by : </div>
+
+  <div class="dropdown">
+    <a class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Tic-Tac-Toe
+    </a>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <form>
+        <input name="credentials[email]" type="email" placeholder="email">
+        <input name="credentials[password]" type="password" placeholder="password">
+        <input name="credentials[password_confirmation]" type="password" placeholder="password confirmation">
+        <a class="dropdown-item" type="submit" href="#sign-up-form">Sign Up</a>
+        <p alert="user-message"></p>
+      </form>
+      <form>
+        <input name="credentials[email]" type="email" placeholder="email">
+        <input name="credentials[password]" type="password" placeholder="password">
+        <a class="dropdown-item" type="submit" href="#sign-in-form">Sign In</a>
+        <p id="user-message"></p>
+      </form>
+      <form>
+        <input name="passwords[old]" type="password" placeholder="old password">
+        <input name="passwords[new]" type="password" placeholder="new password">
+        <a class="dropdown-item" type="submit" href="#change-password-form">Change Password</a>
+        <p id="user-message"></p>
+      </form>
+      <form>
+        <a class="dropdown-item" type="submit" href="#sign-out-form">Sign Out</a>
+        <p id="user-message"></p>
+      </form>
+    </div>
   </div>
-
-
-  <form id="sign-up-form">
-    <input name="credentials[email]" type="email" placeholder="email">
-    <input name="credentials[password]" type="password" placeholder="password">
-    <input name="credentials[password_confirmation]" type="password" placeholder="password confirmation">
-    <input type="submit" value="Sign Up">
-  </form>
-  <form id="sign-in-form">
-    <input name="credentials[email]" type="email" placeholder="email">
-    <input name="credentials[password]" type="password" placeholder="password">
-    <input type="submit" value="Sign In">
-  </form>
-  <form id="change-password-form">
-    <input name="passwords[old]" type="password" placeholder="old password">
-    <input name="passwords[new]" type="password" placeholder="new password">
-    <input type="submit" value="Change Password">
-  </form>
-  <form id="sign-out-form">
-    <input type="submit" value="Sign Out">
-  </form>
-
-  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Tic-Tac-Toe</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    <form id="sign-up" class="border">
-      <fieldset>
-        <legend>Sign up!</legend>
-        <input type="text" name="credentials[email]" placeholder="Email">
-        <input type="password" name="credentials[password]" placeholder="Password">
-        <input type="password" name="credentials[password_confirmation]" placeholder="Confirm Password">
-        <input type="submit" value="Submit">
-      </fieldset>
-    </form>
-    <form id="sign-in" class="border">
-      <fieldset>
-        <legend>Sign in!</legend>
-        <input type="text" name="credentials[email]" placeholder="Email">
-        <input type="password" name="credentials[password]" placeholder="Password">
-        <input type="submit" value="Submit">
-      </fieldset>
-    </form>
-    <form id="sign-out" class="border">
-      <fieldset>
-        <input type="submit" value="Sign out!">
-      </fieldset>
-    </form>
-    <form id="change-password" class="border">
-      <fieldset>
-        <legend>Change Password!</legend>
-        <input type="password" name="passwords[old]" placeholder="Old Password">
-        <input type="password" name="passwords[new]" placeholder="New Password">
-        <input type="submit" value="Submit">
-      </fieldset>
-    </form>
-  </nav> -->
-
 </body>
 
 </html>
