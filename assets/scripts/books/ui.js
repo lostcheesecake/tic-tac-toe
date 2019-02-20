@@ -39,7 +39,7 @@ const signOutFailure = () => {
 }
 
 const failure = () => {
-  $('#user-messsage').text('Error, something went wrong.')
+  $('#user-message').text('Error, something went wrong.')
   $('form').trigger('reset')
 }
 
