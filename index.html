@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tic-Tac-Toe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Do not add `link` tags-->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Do not add `script` tags-->
+  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+</head>
+
+<body>
+  <h1>TIC TAC TOE</h1>
+  <div id="player-is"></div>
+  <table id="board">
+    <tr>
+      <td class="cell" id="0"></td>
+      <td class="cell" id="1"></td>
+      <td class="cell" id="2"></td>
+    </tr>
+    <tr>
+      <td class="cell" id="3"></td>
+      <td class="cell" id="4"></td>
+      <td class="cell" id="5"></td>
+    </tr>
+    <tr>
+      <td class="cell" id="6"></td>
+      <td class="cell" id="7"></td>
+      <td class="cell" id="8"></td>
+    </tr>
+  </table>
+  <a id="player-is"></a>
+  <form id="restart-game-form">
+    <fieldset>
+      <input type="submit" value="Restart Game">
+      <a id="user-message"></a>
+    </fieldset>
+  </form>
+  <form id="sign-up-form">
+    <fieldset>
+      <legend>Sign up!</legend>
+      <input type="text" name="credentials[email]" placeholder="Email">
+      <input type="password" name="credentials[password]" placeholder="Password">
+      <input type="password" name="credentials[password_confirmation]" placeholder="Confirm Password">
+      <input type="submit" value="Sign up!">
+      <a id="user-message"></a>
+    </fieldset>
+  </form>
+
+  <form id="sign-in-form">
+    <fieldset>
+      <legend>Sign in!</legend>
+      <input type="text" name="credentials[email]" placeholder="Email">
+      <input type="password" name="credentials[password]" placeholder="Password">
+      <input type="submit" value="Sign in!">
+      <a id="user-message"></a>
+    </fieldset>
+  </form>
+
+  <form id="sign-out-form">
+    <fieldset>
+      <legend>Sign Out!</legend>
+      <input type="submit" value="Sign out!">
+      <a id="user-message"></a>
+    </fieldset>
+  </form>
+
+  <form id="change-password-form">
+    <fieldset>
+      <legend>Change Password!</legend>
+      <input type="password" name="passwords[old]" placeholder="Old Password">
+      <input type="password" name="passwords[new]" placeholder="New Password">
+      <input type="submit" value="Change Password!">
+      <a id="user-message"></a>
+    </fieldset>
+  </form>
+</body>
+
+</html>
