@@ -1,5 +1,10 @@
 @import '~bootstrap/scss/bootstrap';
 
+body {
+  flex-direction: column;
+  background-color: gray;
+}
+
 td {
   // display: none;
   background-color: blue;
@@ -19,11 +24,12 @@ html {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 100px;
   justify-content: center;
-  left: 975px;
+  left: 825px;
   margin-left: -150px;
   position: absolute;
+
 }
 
 table {
@@ -51,6 +57,10 @@ table tr td:last-child {
   border-right: 0;
 }
 
-form {
-  flex-direction: column;
+.restartbutton {
+  margin-left: 50px;
+}
+
+.player-is {
+  margin-left: 100px;
 }

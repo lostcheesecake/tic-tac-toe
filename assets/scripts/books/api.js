@@ -40,9 +40,19 @@ const signOut = () => {
     }
   })
 }
+
+const restartGame = (formData) => {
+  return $.ajax({
+    url: config.apiUrl + '/restart-game',
+    method: '',
+    data: formData
+  })
+}
+
 module.exports = {
   signUp,
   signIn,
   changePassword,
-  signOut
+  signOut,
+  restartGame
 }

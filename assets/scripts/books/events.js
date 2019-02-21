@@ -3,6 +3,17 @@ const getFormFields = require('../../../lib/get-form-fields.js')
 const api = require('./api.js')
 const ui = require('./ui.js')
 
+const onRestartGame = (event) => {
+  event.preventDefault()
+
+  const form = event.target
+
+  const formData = getFormFields(form)
+  api.restartGame(formData)
+    .then(ui.restartGameSuccess)
+    .catch(ui.restartGameFailure)
+}
+
 const onSignUp = (event) => {
   console.log('onSignUp')
   event.preventDefault()
@@ -58,5 +69,6 @@ module.exports = {
   onSignUp,
   onSignIn,
   onChangePassword,
-  onSignOut
+  onSignOut,
+  onRestartGame
 }

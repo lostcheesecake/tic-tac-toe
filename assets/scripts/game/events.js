@@ -15,11 +15,11 @@ const updateGame = function () {
     }
     move++
     if (checkForWinner() === -1 && move === 10) {
-      $('#player-is').text('Game is a DRAWWWWW!')
+      $('#player-is').text('Game is a draw, Click Restart to play again.')
     }
     if (checkForWinner() !== -1 && checkForWinner() !== '') {
-      if (checkForWinner() === 'X') { $('#player-is').text('Player 1 wins!') }
-      if (checkForWinner() === 'O') { $('#player-is').text('Player 2 wins!') }
+      if (checkForWinner() === 'X') { $('#player-is').text('Player 1 wins! Click Restart to play again.') }
+      if (checkForWinner() === 'O') { $('#player-is').text('Player 2 wins! Click Restart to play again.') }
       play = false
     }
   }

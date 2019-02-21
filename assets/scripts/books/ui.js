@@ -1,4 +1,5 @@
 'use strict'
+
 const store = require('../store.js')
 
 const signUpSuccess = () => {
@@ -10,9 +11,7 @@ const signUpFailure = () => {
 }
 
 const signInSuccess = (responseData) => {
-  $('')
   $('#user-message').text('Successfully signed in!')
-  // save the token
   store.user = responseData.user
 }
 
@@ -43,6 +42,14 @@ const failure = () => {
   $('form').trigger('reset')
 }
 
+const restartGameSuccess = () => {
+  $('form').trigger('reset')
+}
+
+const restartGameFailure = () => {
+  $('#user-message').text('Error restarting game.')
+}
+
 module.exports = {
   signUpSuccess,
   signUpFailure,
@@ -52,5 +59,7 @@ module.exports = {
   changePasswordFailure,
   signOutSuccess,
   signOutFailure,
-  failure
+  failure,
+  restartGameSuccess,
+  restartGameFailure
 }
