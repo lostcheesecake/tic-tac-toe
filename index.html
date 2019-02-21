@@ -14,6 +14,9 @@
 </head>
 
 <body>
+  <h1>TIC TAC TOE</h1>
+  <button class="restartButton">Restart Game</button>
+  <div id="player-is"></div>
   <table id="board">
     <tr>
       <td class="cell" id="0"></td>
@@ -31,42 +34,27 @@
       <td class="cell" id="8"></td>
     </tr>
   </table>
-  <div>Player One Choose:</div>
-  <button>X</button>
-  <button>O</button>
-
-  <div> Next move by : </div>
-
-  <div class="dropdown">
-    <a class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Tic-Tac-Toe
-    </a>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-      <form>
-        <input name="credentials[email]" type="email" placeholder="email">
-        <input name="credentials[password]" type="password" placeholder="password">
-        <input name="credentials[password_confirmation]" type="password" placeholder="password confirmation">
-        <a class="dropdown-item" type="submit" href="#sign-up-form">Sign Up</a>
-        <p alert="user-message"></p>
-      </form>
-      <form>
-        <input name="credentials[email]" type="email" placeholder="email">
-        <input name="credentials[password]" type="password" placeholder="password">
-        <a class="dropdown-item" type="submit" href="#sign-in-form">Sign In</a>
-        <p id="user-message"></p>
-      </form>
-      <form>
-        <input name="passwords[old]" type="password" placeholder="old password">
-        <input name="passwords[new]" type="password" placeholder="new password">
-        <a class="dropdown-item" type="submit" href="#change-password-form">Change Password</a>
-        <p id="user-message"></p>
-      </form>
-      <form>
-        <a class="dropdown-item" type="submit" href="#sign-out-form">Sign Out</a>
-        <p id="user-message"></p>
-      </form>
+  <form>
+    <input name="credentials[email]" type="email" placeholder="email">
+    <input name="credentials[password]" type="password" placeholder="password">
+    <input name="credentials[password_confirmation]" type="password" placeholder="password confirmation">
+    <a class="dropdown-item" type="submit" href="#sign-up-form">Sign Up</a>
+    <div class="alert alert-primary" role="alert" id="user-message">
     </div>
-  </div>
+  </form>
+  <form>
+    <input name="credentials[email]" type="email" placeholder="email">
+    <input name="credentials[password]" type="password" placeholder="password">
+    <a class="dropdown-item" type="submit" href="#sign-in-form">Sign In</a>
+  </form>
+  <form>
+    <input name="passwords[old]" type="password" placeholder="old password">
+    <input name="passwords[new]" type="password" placeholder="new password">
+    <a class="dropdown-item" type="submit" href="#change-password-form">Change Password</a>
+  </form>
+  <form>
+    <a class="dropdown-item" type="submit" href="#sign-out-form">Sign Out</a>
+  </form>
 </body>
 
 </html>

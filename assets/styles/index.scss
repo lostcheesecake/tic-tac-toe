@@ -1,6 +1,8 @@
 @import '~bootstrap/scss/bootstrap';
 
 td {
+  // display: none;
+  background-color: blue;
   border: 5px solid;
   cursor: pointer;
   font-family: 'Comic Sans MS', cursive, sans-serif;
@@ -10,6 +12,18 @@ td {
   text-align: center;
   vertical-align: middle;
   width: 200px;
+}
+
+html {
+  background-color: gray;
+}
+
+h1 {
+  font-size: 50px;
+  justify-content: center;
+  left: 975px;
+  margin-left: -150px;
+  position: absolute;
 }
 
 table {

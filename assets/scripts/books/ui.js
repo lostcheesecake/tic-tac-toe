@@ -10,6 +10,7 @@ const signUpFailure = () => {
 }
 
 const signInSuccess = (responseData) => {
+  $('')
   $('#user-message').text('Successfully signed in!')
   // save the token
   store.user = responseData.user
