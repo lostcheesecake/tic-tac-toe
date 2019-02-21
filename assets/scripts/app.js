@@ -9,7 +9,6 @@ const gameEvents = require('./game/events')
 // require('./example'))
 
 $(document).ready(function () {
-  console.log('Running JavaScript.....')
   $('#board tr td').click('click', gameEvents.updateGame)
 })
 

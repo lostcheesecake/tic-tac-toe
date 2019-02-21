@@ -6,7 +6,6 @@ const playerTwo = 'O'
 
 const updateGame = function () {
   event.preventDefault()
-  console.log('updateGame...')
 
   if ($(event.target).text() === '' && play) {
     if ((move % 2) === 1) {
@@ -15,8 +14,6 @@ const updateGame = function () {
       $(this).append(playerTwo)
     }
     move++
-    console.log(move)
-    console.log(checkForWinner())
     if (checkForWinner() === -1 && move === 10) {
       $('#player-is').text('Game is a DRAWWWWW!')
     }

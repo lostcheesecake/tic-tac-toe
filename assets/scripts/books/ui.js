@@ -32,7 +32,6 @@ const signOutSuccess = () => {
   $('#user-message').text('Successfully signed out!')
   $('form').trigger('reset')
   store.user = null
-  console.log('store:', store)
 }
 
 const signOutFailure = () => {
